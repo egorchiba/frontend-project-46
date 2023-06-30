@@ -10,11 +10,17 @@
   },
   "author": "",
   "license": "ISC",
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
   "dependencies": {
     "commander": "^11.0.0",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",
     "node": "^20.3.1"
+  },
+  "scripts": {
+    "test": "node --test"
   },
   "devDependencies": {
     "eslint": "^8.43.0",
