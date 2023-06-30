@@ -2,11 +2,11 @@ publish:
 	npm publish --dry-run
 
 test:
-	npx jest
+	npm test --test-reporter=spec
 
 test-coverage:
 	# TODO: set global flag --experimental-test-coverage
-	npx jest
+	npm test
 
 lint:
 	npx eslint .
