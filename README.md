@@ -5,6 +5,9 @@
 ### Step 6
 [![asciicast](https://asciinema.org/a/HHZ3e01QRphIrP61JvVUv0fwl.svg)](https://asciinema.org/a/HHZ3e01QRphIrP61JvVUv0fwl)
 
+### Step 7
+[![asciicast](https://asciinema.org/a/C8xF3nfwQcfX5n8QfD8cmEKVX.svg)](https://asciinema.org/a/C8xF3nfwQcfX5n8QfD8cmEKVX)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/egorchiba/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/egorchiba/frontend-project-46/actions)
 [![my-workflow](https://github.com/egorchiba/frontend-project-46/actions/workflows/my-workflow.yml/badge.svg)](https://github.com/egorchiba/frontend-project-46/actions/workflows/my-workflow.yml)
