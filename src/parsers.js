@@ -12,8 +12,7 @@ const parse = (filepath) => {
         return yaml.load(readFileSync(filepath));
 //        break;
     default: {
-        console.log('Sorry, wrong extention');
-        return;
+      return new Error(`Unknown extension: '${extention}'!`)
     }
   }
 // return result;      
