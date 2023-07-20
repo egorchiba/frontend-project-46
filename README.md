@@ -1,5 +1,13 @@
 # Вычислитель отличий - Frontend-project-46
 
+## Установка
+```bach
+$ make install
+$ npm link
+```
+Показывает отличия между двумя файлами.
+
+### Step 5
 [![asciicast](https://asciinema.org/a/AeR5kT3qglV7HeXH9tv4hKGNu.svg)](https://asciinema.org/a/AeR5kT3qglV7HeXH9tv4hKGNu)
 
 ### Step 6
@@ -7,6 +15,9 @@
 
 ### Step 7
 [![asciicast](https://asciinema.org/a/C8xF3nfwQcfX5n8QfD8cmEKVX.svg)](https://asciinema.org/a/C8xF3nfwQcfX5n8QfD8cmEKVX)
+
+### Step 8
+[![asciicast](https://asciinema.org/a/CXiLiWEcMPoqCbV7Mn79LuH7l.svg)](https://asciinema.org/a/CXiLiWEcMPoqCbV7Mn79LuH7l)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/egorchiba/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/egorchiba/frontend-project-46/actions)
