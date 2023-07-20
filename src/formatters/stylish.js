@@ -32,7 +32,7 @@ const makeStylish = (tree) => {
         case 'nested':
           return `${addSpace(depth)}  ${key}: {\n${iter(children, depth + 1)}\n${addSpace(depth)}  }`;
         default:
-          throw new Error(`Unknow ${type}!`);
+          throw new Error(`Unknow ${status}!`);
         }
     }).join('\n');
     return `{\n${iter(tree)}\n}`;

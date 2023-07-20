@@ -21,7 +21,7 @@ const makeTree = (obj1, obj2) => {
     else if (obj1[prop] !== obj2[prop]) {
       diffTree.push({ key: prop, oldValue: obj1[prop], newValue: obj2[prop], status: 'updated'});
     }
-  };
+  }
 
   return diffTree;
   };
