@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import generateDiff from './src/index.js';
+import generateDiff from '../src/index.js';
 import { program } from 'commander';
 
 program
