@@ -20,7 +20,7 @@ const makeStylish = (tree) => {
       switch (status) {
         case 'added':
           return `${addSpace(depth)}+ ${key}: ${getString(value, depth + 1)}`;
-        case 'deleted':
+        case 'removed':
           return `${addSpace(depth)}- ${key}: ${getString(value, depth + 1)}`;
         case 'unchanged':
           return `${addSpace(depth)}  ${key}: ${getString(value, depth + 1)}`;

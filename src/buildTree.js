@@ -10,7 +10,7 @@ const makeTree = (obj1, obj2) => {
       diffTree.push({ key: prop, status: 'nested', children: makeTree(obj1[prop], obj2[prop])});
     }
     else if (obj2[prop] === undefined) {
-      diffTree.push({ key: prop, value: obj1[prop], status: 'deleted'});
+      diffTree.push({ key: prop, value: obj1[prop], status: 'removed'});
     }
     else if (obj1[prop] === undefined) {
       diffTree.push({ key: prop, value: obj2[prop], status: 'added'});
