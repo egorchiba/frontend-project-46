@@ -1,8 +1,8 @@
 import _ from 'lodash';
 
 const makeTree = (obj1, obj2) => {
-  const keysObj = {};
-  const keys = Object.keys(Object.assign(keysObj, obj1, obj2));
+  const keysObj = { ...obj1, ...obj2 };
+  const keys = Object.keys(keysObj);
   const sortedKeys = _.sortBy(keys);
   const diffTree = [];
   sortedKeys.forEach((prop) => {
