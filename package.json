@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "второй проект Хекслет \"Вычислитель отличий\"",
   "bin": {
-    "genDiff": "bin/gendiff.js"
+    "gendiff": "bin/gendiff.js"
   },
   "type": "module",
   "main": "src/index.js",
