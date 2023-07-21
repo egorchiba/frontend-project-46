@@ -4,7 +4,7 @@ module.exports = {
         "es2021": true,
         "jest/globals": true
     },
-    "extends": "eslint:recommended",
+    "extends": "airbnb-base",
     "overrides": [
     ],
     "parserOptions": {
@@ -13,5 +13,9 @@ module.exports = {
     },
     "plugins": ["jest"],
     "rules": {
+        "no-console": "off",
+        "import/extensions": [2, {
+            "js": "always"
+        }]
     }
 }

@@ -6,16 +6,16 @@ const parse = (filepath) => {
   const extention = path.extname(filepath);
   switch (extention) {
     case '.json':
-        return JSON.parse(readFileSync(filepath));
-//        break;
+      return JSON.parse(readFileSync(filepath));
+      //        break;
     case ('.yml' || '.yaml'):
-        return yaml.load(readFileSync(filepath));
-//        break;
+      return yaml.load(readFileSync(filepath));
+      //        break;
     default: {
-      return new Error(`Unknown extension: '${extention}'!`)
+      return new Error(`Unknown extension: '${extention}'!`);
     }
   }
-// return result;      
+// return result;
 };
 
 export default parse;

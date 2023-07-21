@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import generateDiff from '../src/index.js';
 import { program } from 'commander';
+import generateDiff from '../src/index.js';
 
 program
   .name('gendiff')
@@ -12,5 +12,5 @@ program
   .action((filepath1, filepath2) => {
     const option = program.opts();
     console.log(generateDiff(filepath1, filepath2, option.format));
-    })
+  })
   .parse();
