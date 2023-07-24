@@ -1,6 +1,5 @@
-import path from 'path';
+import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 import { readFileSync } from 'node:fs';
 import generateDiff from '../src/index.js';
 
@@ -11,19 +10,19 @@ const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', 
 const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 
 const dataTests = [
-  { 
+  {
     file1: 'file1.json', file2: 'file2.json', format: 'stylish', expected: 'expectedStylish.txt',
   },
   {
     file1: 'file1.yml', file2: 'file2.yml', format: 'stylish', expected: 'expectedStylish.txt',
   },
-  { 
+  {
     file1: 'file1.json', file2: 'file2.json', format: 'plain', expected: 'expectedPlain.txt',
   },
   {
     file1: 'file1.yml', file2: 'file2.yml', format: 'plain', expected: 'expectedPlain.txt',
   },
-  { 
+  {
     file1: 'file1.json', file2: 'file2.json', format: 'json', expected: 'expectedJSON.txt',
   },
   {

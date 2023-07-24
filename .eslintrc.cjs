@@ -13,6 +13,7 @@ module.exports = {
     },
     "plugins": ["jest"],
     "rules": {
+        "no-underscore-dangle": ["error", { "allow": ["__filename", "__dirname"] }],
         "no-console": "off",
         "import/extensions": [2, {
             "js": "always"
