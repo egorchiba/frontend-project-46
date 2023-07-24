@@ -8,7 +8,7 @@ $ npm link
 ## Описание
 ```bach
 Вычислитель показывает отличия между двумя файлами.
-
+```
 ### Демонстрация сравнения двух плоских файлов
 [![asciicast](https://asciinema.org/a/AeR5kT3qglV7HeXH9tv4hKGNu.svg)](https://asciinema.org/a/AeR5kT3qglV7HeXH9tv4hKGNu)
 
