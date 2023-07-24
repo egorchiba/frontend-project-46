@@ -5,18 +5,20 @@
 $ make install
 $ npm link
 ```
-Показывает отличия между двумя файлами.
+## Описание
+```bach
+Вычислитель показывает отличия между двумя файлами.
 
-### Step 5
+### Демонстрация сравнения двух плоских файлов
 [![asciicast](https://asciinema.org/a/AeR5kT3qglV7HeXH9tv4hKGNu.svg)](https://asciinema.org/a/AeR5kT3qglV7HeXH9tv4hKGNu)
 
-### Step 6
+### Демонстрация рекурсивного сравнения двух файлов JSON с форматером Stylish
 [![asciicast](https://asciinema.org/a/HHZ3e01QRphIrP61JvVUv0fwl.svg)](https://asciinema.org/a/HHZ3e01QRphIrP61JvVUv0fwl)
 
-### Step 7
+### Демонстрация рекурсивного сравнения двух файлов YML с плоским выводом с форматером Plain
 [![asciicast](https://asciinema.org/a/C8xF3nfwQcfX5n8QfD8cmEKVX.svg)](https://asciinema.org/a/C8xF3nfwQcfX5n8QfD8cmEKVX)
 
-### Step 8
+### Демонстрация рекурсивного сравнения двух файлов YML с выводом в формате JSON
 [![asciicast](https://asciinema.org/a/CXiLiWEcMPoqCbV7Mn79LuH7l.svg)](https://asciinema.org/a/CXiLiWEcMPoqCbV7Mn79LuH7l)
 
 ### Hexlet tests and linter status:

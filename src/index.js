@@ -1,12 +1,15 @@
+import path from 'path';
 import parse from './parsers.js';
-import makeTree from './buildTree.js';
+import buildTree from './buildTree.js';
 import formatTree from './formatters/index.js';
 
 const generateDiff = (filePath1, filePath2, format = 'stylish') => {
-  const obj1 = parse(filePath1);
-  const obj2 = parse(filePath2);
+  const normalizedFilePath1 = path.resolve(process.cwd(), filePath1);
+  const normilizedFilePath2 = path.resolve(process.cwd(), filePath2);
+  const obj1 = parse(normalizedFilePath1);
+  const obj2 = parse(normilizedFilePath2);
 
-  const tree = makeTree(obj1, obj2);
+  const tree = buildTree(obj1, obj2);
 
   return formatTree(tree, format);
 };

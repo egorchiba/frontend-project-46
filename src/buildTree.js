@@ -1,12 +1,12 @@
 import _ from 'lodash';
 
-const makeTree = (obj1, obj2) => {
+const buildTree = (obj1, obj2) => {
   const keysObj = { ...obj1, ...obj2 };
   const keys = Object.keys(keysObj);
   const sortedKeys = _.sortBy(keys);
   const diffTree = sortedKeys.map((prop) => {
     if ((typeof obj1[prop] === 'object') && (typeof obj2[prop] === 'object')) {
-      return { key: prop, status: 'nested', children: makeTree(obj1[prop], obj2[prop]) };
+      return { key: prop, status: 'nested', children: buildTree(obj1[prop], obj2[prop]) };
     }
     if (obj2[prop] === undefined) {
       return { key: prop, value: obj1[prop], status: 'removed' };
@@ -25,4 +25,4 @@ const makeTree = (obj1, obj2) => {
   return diffTree;
 };
 
-export default makeTree;
+export default buildTree;
