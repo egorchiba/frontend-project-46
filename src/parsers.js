@@ -1,21 +1,12 @@
-import { readFileSync } from 'node:fs';
-import path from 'node:path';
 import yaml from 'js-yaml';
 
-const parse = (filepath) => {
-  const extention = path.extname(filepath);
-  switch (extention) {
-    case '.json':
-      return JSON.parse(readFileSync(filepath));
-      //        break;
-    case ('.yml' || '.yaml'):
-      return yaml.load(readFileSync(filepath));
-      //        break;
-    default: {
-      return new Error(`Unknown extension: '${extention}'!`);
-    }
-  }
-// return result;
+const parse = (data, ext) => {
+  const extensions = {
+    json: (fileData) => JSON.parse(fileData),
+    yaml: (fileData) => yaml.load(fileData),
+    yml: (fileData) => yaml.load(fileData),
+  };
+  return !extensions[ext] ? new Error(`Unknown extension: '${ext}'!`) : extensions[ext](data);
 };
 
 export default parse;
